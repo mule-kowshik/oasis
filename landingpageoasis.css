@@ -1,0 +1,327 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.main-image{
+	display: flex;
+	background: url("https://www.branchfurniture.com/cdn/shop/files/erghero_4_1880x.jpg?v=1692022162");
+	width: 100%;
+	height: 850px;
+	background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+
+
+
+.image-text{
+	padding-top: 100px;
+	padding-left: 100px;
+	color: #314438;
+    font-size: 23px;
+    font-family: var(--font-family-header);
+}
+
+.header h2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.header ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.header h2:hover::after {
+    background-color: lightseagreen; 
+}
+
+.contract-grade img,.fast-design img,.free-shipping img,.buy-direct img{
+	height: 50%;
+	width: 50%;
+}
+
+.DESIGN-MY-OFFICE{
+	margin-top: 20px;
+}
+
+.button{
+	background-color: #314438; 
+	height: 40px;
+}
+
+.shop-now{
+	background-color: darkgreen; 
+	height: 40px;
+	width: 340px;
+	color: #ffffff;
+    background-color: #314438;
+}
+
+.circles{
+	display: flex;
+}
+
+
+
+.shop-now {
+            background-color: #314438;
+            color: #ffffff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .shop-now:hover {
+            background-color: #007acc;
+        }
+
+        .branch {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .circles {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .contract-grade img, .fast-design img, .free-shipping img, .buy-direct img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .branch h2 {
+            color: #314438;
+            margin-bottom: 20px;
+        }
+
+        .branch h3 {
+            color: #314438;
+            margin-bottom: 10px;
+        }
+
+        .branch p {
+            color: #606060;
+        }
+
+.fast-design h3{
+    padding-top: 22px;
+}
+
+
+.feature{
+	background-color: #314438;
+    height: 100px;
+}
+
+.feature h2{
+	color: white;
+}
+
+
+.company-logo{
+	display: flex;
+	justify-content: space-around;
+}
+
+.company-logo img{
+	width: 89px;
+	height: 30px;
+}
+
+
+.work-station{
+	display: flex;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.ew,
+.ec ,.dmo{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ew img,
+.ec img ,.dmo img{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ew:hover img,
+.ec:hover img ,
+.dmo:hover img {
+  transform: scale(1.1);
+}
+
+.ws-text {
+  padding: 20px;
+  background-color: #f1f1f1; 
+  text-align: center;
+}
+
+.ws-text h2 {
+  color: #333;
+}
+
+.ws-text p {
+  color: #666; 
+}
+
+form button {
+  background-color: #314438; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: lightseagreen;
+}
+
+.review first-review review1 checked,.review first-review review1 checked {
+  color: orange;
+}
+
+.first-review,.second-review{
+    display: flex;
+    gap:40px;
+}
+
+.review1,.review2,.review3{
+    text-align: center;
+}
+
+
+.best-images{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+
+.best-image4:hover,.best-image1:hover,.best-image2:hover,.best-image3:hover {
+  transform: scale(1.1);
+}
+
+.best-images img{
+    height: 350px;
+    width: 345px;
+}
+
+.best-sellers h2{
+    padding-top:  30px;
+    padding-bottom: 10px;
+}
+
+.best-sellers{
+    background-color: #f3eeea;
+    height: 600px;
+}
+
+.best-image4,.best-image3,.best-image2,.best-image1{
+    background-color: white;
+    transition: 0.2s all ease-in;
+}
+
+
+.contact-us{
+    background-color: #314438;
+    display: flex;
+
+}
+
+.address{
+    margin-top: 70px;
+    padding-left: 200px;
+}
+
+.address img{
+    width: 191px;
+    height: 47px;
+}
+
+
+.news input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.news button {
+    background-color: #314438;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.news button:hover {
+    background-color: lightseagreen;
+}
+
+.contact-us h3 {
+    color: white;
+}
+
+.sho, .expo, .sup, .news {
+    padding: 20px;
+}
+
+.sho h3, .expo h3, .sup h3, .news h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sho h4, .expo h4, .sup h4, .news h4 {
+    color: #bbb;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.sho h4 a, .expo h4 a, .sup h4 a, .news h4 a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.sho h4 a:hover, .expo h4 a:hover, .sup h4 a:hover, .news h4 a:hover {
+    color: lightseagreen;
+}
+
+.first-review{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+

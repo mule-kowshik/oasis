@@ -1,0 +1,382 @@
+
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+
+.app-logo {
+    text-align: center;
+}
+
+.download {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.download-button {
+    background-color: #ff6600;
+    border-radius: 20px;
+    width: 150px; 
+    height: 50px; 
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: darkorange;
+    transform: scale(1.05); /* Slight scale increase on hover for an interactive effect */
+}
+
+
+.logo {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+.main-block {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.typewriter h2 {
+  color: #ff6600;
+  font-size: 2em;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.typewriter p {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+.app-logo {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+  transform: scale(1.2) rotate(360deg);
+}
+
+.photo {
+  height: 600px;
+  width: 600px;
+  margin-left: 50px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.7);
+}
+
+
+.main-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.about h3 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+
+
+
+
+.skills-section {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.skills h3 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-item {
+  text-align: center;
+  flex: 0 0 calc(33.333% - 20px);
+}
+
+.skill-item img {
+  height: 80px;
+  width: 80px;
+}
+
+.skill-item p {
+  font-size: 1.2em;
+  color: #ddd;
+  transition: 0.2s all ease-in;
+}
+
+
+.skills-section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-text{
+  margin-top: 100px;
+}
+
+
+.skills-list  skill-item img{
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover img {
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+  top: -20px;
+  transition: 0.2s all ease-in;
+  border-radius: 50px;
+  transform: scale(1.2);
+}
+
+.projects {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.project-text h3 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+.main-scroll-div {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+        }
+        
+        .cover {
+            position: relative;
+            width: 90%;
+            height: 50%;
+        }
+        
+        .cover::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(90deg, black, transparent);
+        }
+        
+        .cover::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(-90deg, black, transparent);
+        }
+        
+        .scroll-image {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        
+        .child {
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            border: 1px solid rgba(207, 201, 201, .3);
+            overflow: hidden;
+        }
+        
+        .scroll-images::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+        
+        .child-img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .icon {
+            color: rgb(67, 247, 76);
+            background-color: black;
+            font-size: 50px;
+            outline: none;
+            border: none;
+            padding: opx 20px;
+            cursor: pointer;
+        }
+        
+        .icon:hover {
+            color: yellow;
+        }
+
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.contact-me {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 50px;
+
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.contact-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.contact-text h2 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+.contact-text input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.contact-text button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.contact-text button:hover {
+  background-color: #e55a00;
+
+}
+
+
+
+
+.contact-me {
+  /* ... */
+  background-image: url('path/to/subtle-texture.png'); /* Add a subtle texture */
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Add depth */
+}
+
+.contact-text h2 {
+  /* ... */
+  font-weight: 300; /* Lighter font weight for a more approachable feel */
+}
+
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+.message-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.success-message {
+  color: #4CAF50; 
+  font-weight: bold;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}

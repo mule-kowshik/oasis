@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  backdrop-filter: blur(0px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  height: 80vh;
+}
+
+
+
+h1 {
+  color: #333333;
+}
+
+p {
+  color: #666666;
+}
+
+.main-block {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width:80%;
+  max-width: 400px;
+  height: auto;
+  align-items: center;
+  gap: 20px; 
+  margin: 20px auto;
+  padding: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+input {
+  height: 40px;
+  width: 100%; 
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  height: 40px;
+  width: 100%; 
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3c8e41;
+}
+
+
+
+.zero{
+  margin-left: auto;
+  font-size: 30px;
+}
+
+
+
+.info-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    cursor: help;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info-icon:hover .tooltip {
+    display: block;
+}
+
+
+
+body.cold {
+  background: url('/df90de382bdd5688b6f8770e1914f8c4.gif') center/cover no-repeat fixed;
+}
+
+body.hot {
+  background: url('https://www.icegif.com/wp-content/uploads/2022/07/icegif-874.gif') center/cover no-repeat fixed;
+}
+
+body.moderate {
+  background: url('https://animesher.com/orig/1/190/1903/19030/animesher.com_gif-beautiful-spring-1903053.gif') center/cover no-repeat fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-block {
+    width: 80%; 
+    margin-left: auto; 
+  }
+}
